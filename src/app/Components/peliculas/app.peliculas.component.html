@@ -1,0 +1,10 @@
+<h1>Peliculas</h1>
+<input type="text" (ngModel)="nuevaPelicula" />
+<ul>
+  <li>Efecto Mariposa</li>
+  <li>El viaje de Chihiro</li>
+  <li *ngIf="clasificacion">Tiburones 3 el regreso del mar</li>
+</ul>
+<div *ngFor="let pelicula of misPeliculas; let i= index">
+  <p>{{i+1+ " "}} {{pelicula}}</p>
+</div>
